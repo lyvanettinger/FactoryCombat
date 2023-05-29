@@ -15,7 +15,7 @@ Actor* EnemyFactory::CreateEnemy(int pIndex)
 		return new FitoEnemy();
 	case 3:
 		return new MetoEnemy();
+	default:
+		return new QuatoEnemy();
 	}
-
-	return new QuatoEnemy();
 }
